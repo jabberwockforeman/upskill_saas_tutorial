@@ -54,6 +54,21 @@ h1, h2, h3 {
   opacity: 0.75;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle{
+  border: 2px solid white;
+  &:hover, &:focus{
+    background-color:#F7891E;
+  }
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: white;
+}
+
 .navbar {
   border:none;
 }
