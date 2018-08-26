@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Saasapp</title>
+    <title>SIGN UP</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
@@ -22,7 +22,7 @@
         </button>
         <%= link_to root_path, class:"navbar-brand" do %>
           <i class="fa fa-group"></i>
-          DevMatch
+          SIGNUP
         <% end %>
       </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
@@ -34,8 +34,8 @@
     </div>
 </nav>
   <div class="container">
-     <% flash.each do |type, msg| %>
-      <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+    <% flash.each do |key, msg| %>
+      <%= content_tag :div, msg, class: "alert alert-#{key}" %>
     <% end %>
   </div>
   <%= yield %>
