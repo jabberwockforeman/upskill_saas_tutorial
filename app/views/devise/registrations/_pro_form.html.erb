@@ -42,4 +42,13 @@
   <div class="actions form-group">
     <%= f.submit "Register", class: 'btn btn-success' %>
   </div>
+  <label class="amount">
+            <span>Total: $10.00</span>
+          </label><br>
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+            data-description="Devmatch Pro Subscription"
+            data-amount="500"
+            data-locale="auto">
+          </script>
 <% end %>
